@@ -1008,14 +1008,24 @@ int main()
     case 0:
     	
     {
+    	
+    printf("\t  chose pacman location x: ");
+		
+    scanf(" %d", &start[1]);   
+    
+    printf("\t\t\t\ty: ");
+    
+    scanf(" %d", &start[0]);
+    
+    x=start[1];
+    
+    y=start[0];
+    
+    getchar();
 	                                                 
 	Map();
 	
     Display();	
-	
-	start[0]=0;
-    
-    start[1]=0;	   
     
     for(int p=0; p<count; p++)
     
@@ -1152,6 +1162,7 @@ int main()
     
     }
     
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n");
 	
 	fclose(ptf);
 }
